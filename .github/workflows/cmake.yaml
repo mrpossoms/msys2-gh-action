@@ -28,6 +28,10 @@ jobs:
 
     - shell: powershell
       run: |
+        echo "[msys2 make version]"
         msys2 -c 'make --version'
+        echo "[msys2 GCC version]"
         msys2 -c 'gcc --version'
+        echo "[windows CMake version]"
+        cmake --version
 
