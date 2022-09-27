@@ -25,3 +25,9 @@ jobs:
 
     - name: Setup
       run: pip3 install gitman
+
+    - shell: powershell
+      run: |
+        msys2 -c 'make --version'
+        msys2 -c 'gcc --version'
+
